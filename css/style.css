@@ -1,0 +1,46 @@
+body {
+    background-color: #000;
+    color: bisque;
+    font-size: 21px;
+}
+
+p {
+    color:aquamarine;
+}
+
+div{
+    background-color: blueviolet;
+    width: 500px;
+}
+
+.first-section {
+    background-color: red;
+}
+/* this is a class */
+#second-section {
+background-color: firebrick;
+}
+/* this is an id */
+.intro-txt {
+    color:blueviolet
+}
+
+/* This is the css box model */
+/*
+    Margin;
+    Border;
+    Pading;
+*/
+.box{
+    background-color: pink;
+    width: 500px;
+    margin: 50px;
+    margin-top: 100px;
+    /*border-left-width: 5px;
+    border-color: red;
+    border-style: solid;*/
+    border: 5px red solid;
+    padding: 10px;
+
+
+}
