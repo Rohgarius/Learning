@@ -2,14 +2,25 @@ body {
     background-color: #000;
     color: bisque;
     font-size: 21px;
+    font-family: Calibri,Candara,Segoe,"Segoe UI",Optima,Arial,sans-serif; 
+    /*text-align: center;*/
+    margin: auto;
+    max-width: 1000px;
 }
-
+h1{
+    margin-bottom: 0px;
+    /*spacing between paragrafs and headers is costumizable by margin-(bottom,top,left,right)*/
+}
 p {
     color:aquamarine;
+    line-height: 1.5;
+    font-style: italic;
+    font-weight: lighter;
+    text-align: center;
 }
 
 div{
-    background-color: blueviolet;
+    background-color: rgb(18, 16, 20);
     width: 500px;
 }
 
@@ -22,25 +33,106 @@ background-color: firebrick;
 }
 /* this is an id */
 .intro-txt {
-    color:blueviolet
+    color:rgb(5, 1, 11)
 }
 
 /* This is the css box model */
 /*
-    Margin;
-    Border;
-    Pading;
+    Margin; empty space around my element
+    Border; a border around my element
+    Pading; empty space inside of my element
 */
 .box{
     background-color: pink;
     width: 500px;
     margin: 50px;
     margin-top: 100px;
-    /*border-left-width: 5px;
+   /* background-image: url(data:image/jpeg;base64,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);*/
+   /*background-image: url(../img/partch2.png);*/
+   /* subtle background*/
+   /*border-left-width: 5px;
     border-color: red;
     border-style: solid;*/
+   /* background-image: url(../img/partch.jpg);
+    background-size: contain;
+    keeps the image full size without loosing any part of it but it might repeat it if its not large enough
+
+    */
+    background-image: url(../img/partch.jpg);
+    background-size: cover;
+    /* will loose margins and quality of the image but it will fill up the div without repeating*/
+
+    background-position: center;
+    /* to center your position of the image*/
+
     border: 5px red solid;
     padding: 10px;
+    /* padding: 10px 100px 200px 25px;
+                top right bottomor left
+                clockwise
+    */
+}
 
+.bold{
+    font-weight: bold;
+    text-decoration: underline;
+    text-transform: capitalize;
+    margin-bottom: 0px;
+    /*spacing between paragrafs and headers is costumizable by margin-(bottom,top,left,right)*/
+}
+a{
+    color: rgb(184, 184, 181);
+    text-decoration: none; /*remove underline from links*/
+}
+a:link{
+    color:beige;
+}
+a:visited{
+    color:blueviolet;
+}
+a:hover, 
+a:focus{
+    color: yellow;
+    /*font-size: 50px;*/
+}
+a:active{
+    color: green;
+}
+/*a:focus{
+    color: red;
+   --- for tabing ---
+}*/
+/* a is for link styling*/
+/* use them in this order: link->visited->hover->active lvha*/
+.box p{
+    color:rgb(56, 109, 0);
 
 }
+/* box p{} has a higher speficity score thank box therefore box p has overrules box*/
+/* you can use double classes to get higher score*/
+/* you can use !important to give something the highest priority.
+   Dont over use */
+ol{
+    list-style-position: inside;
+    list-style-type: upper-roman;
+}
+ul{
+    /*list-style-type: square;*/
+   /* list-style-image: url(../img/arrow.png); 
+   use small image if you want to custom your icon*/
+   background-color: pink;
+   list-style-position: inside;
+}
+ul li{
+    /*background: rgba(255,0,0,0.5);*/
+    /*rgba stands for Red-Green-Blue-Alpha(transperacy)*/
+    background: hsl(360, 100%, 50%);
+    /*hsl(hue, saturation, lightness);*/
+    margin: 20px;
+}
+img{
+    /* moves the picture and allows the txt to go in the space on its oposite side*/
+    float: left;
+    margin-right: 15px;
+}
+
